@@ -1,7 +1,7 @@
 # This YAML file defines the relationship and deployment ordering of your environments.
 
 # The name of the pipeline
-name: pipeline-nyan-cat-project-archer-nyan-cat
+name: pipeline-nyan-cat-project-gsingh04-archer-nyan-cat
 
 # The version of the schema used in this template
 version: 1
@@ -16,12 +16,10 @@ source:
   properties:
     access_token_secret: github-token-nyan-cat-project-archer-nyan-cat
     branch: master
-    repository: nathanpeck/archer-nyan-cat
+    repository: https://github.com/gsingh04/archer-nyan-cat
 
 # The deployment section defines the order the pipeline will deploy
 # to your environments.
 stages:
-    -
-      # The name of the environment to deploy to.
+    - # The name of the environment to deploy to.
       name: test
-
