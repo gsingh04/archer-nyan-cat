@@ -15,7 +15,7 @@ image:
 
 http:
   # Requests to this path will be forwarded to your service.
-  path: '*'
+  path: "*"
 
 # Number of CPU units for the task.
 cpu: 256
@@ -40,6 +40,10 @@ count: 1
 #  targetCPU: 75.0               # Target average CPU utilization percentage.
 
 # You can override any of the values defined above by environment.
-#environments:
-#  test:
-#    count: 2               # Number of tasks to run for the "test" environment.
+environments:
+  test:
+    count: 2 # Number of tasks to run for the "test" environment.
+  prod:
+    count: 2
+  post-prod:
+    count: 3

@@ -21,5 +21,7 @@ source:
 # The deployment section defines the order the pipeline will deploy
 # to your environments.
 stages:
-    - # The name of the environment to deploy to.
-      name: test
+  - # The name of the environment to deploy to.
+    name: test
+  - name: prod
+  - name: post-prod
